@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>student application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="student.css">
+        <script type="text/javascript" src="student.js"></script>
+        
+    </head>
+    <body>
+        <div>
+            <h1>
+                Student Information
+            </h1>
+        </div>
+ 
+        <div id="info1">
+        <form>
+<!--            <input type="button" value="new" id="new" size="35" onclick="location.href='entry.html'">-->
+
+<input type="button" value="new" id="new" size="35" onclick="showtable()"/>
+        
+        </form>
+    
+    <p>
+            <input type="button" value="edit" id="edit" size="35" onclick="edit"/>
+            
+        </p>
+       
+            
+                
+           <table id="table" border="1">
+                <tr>
+                    <td id="first">
+                        First name
+                    </td>
+               
+                    <td id="last">
+                        Last name
+                    </td>
+                    
+                    <td id="dob">
+                        DateOfBirth
+                    </td>
+                </tr>
+          
+            </table>
+           
+        
+        <div id="display">
+            
+        </div>
+        
+        </div>
+        
+        <!------------------------------------------------------------------------------------------------------------->
+        
+        <div id="information">
+        <table>
+                <tr>
+                    <td>
+                        First Name:
+                    </td>
+                    
+                    <td>
+                        <input type="text"  placeholder="firstName" id="firstName" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name:
+                        
+                    </td>
+                    <td>
+                        <input type="text" placeholder="lastName" id="lastName">
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td>
+                        Date Of Birth:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="MM/DD/YYYY" id="dobirth">
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <input type="submit" value="submit" id="submit" onclick="student()"/>
+                    </td>
+                </tr>
+                
+            </table>
+<!--            <input type="text" id="dd" placeholder="hhh"> iam okay-->
+            
+        </div>
+        
+        
+       
+    </body>
+</html>
